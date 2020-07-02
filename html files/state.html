@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:darkolivegreen;
+        }
+.ff{
+margin-left: 550px;
+margin-top: 250px;
+color:black;
+font-family: cursive;
+font-style: italic;
+}
+.ff input{
+    background-color: ivory;
+    border-width: thin;
+    border-width: 2px;
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+    font-style: italic;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="ff">
+   District id:<br><input type="text" id="did"><br>
+ <br>  School id:<br><input type="text" id="sid"><br>
+  <br> 
+  <input type="button" value="submit" onclick="verifydetails()">
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+    <script src="../js files/state.js"></script>
+</body>
+</html>

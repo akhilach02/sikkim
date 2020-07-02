@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Student Info</title>
+
+  <link rel="stylesheet" href="../static/bower_components/bootstrap/dist/css/bootstrap.css">
+ <style >
+     .container-fluid{
+         margin-top: 8px;
+        
+     }
+     
+    table {
+        border-collapse: collapse;
+       background-color: lightslategray;
+        
+        border-width: 2px;
+        border-style: groove;
+        border-color: ivory;
+        
+       
+    }
+    th{
+        border: 2px solid black;
+        padding: 3px;  
+        color:black;
+    
+        font-family: cursive;
+        font-style: italic;   
+    }
+    td{
+        border: 1px solid black;
+        text-align: left;
+            
+    }
+    input{
+
+        padding:5px 5px;
+        font-family: cursive;
+        font-style: italic;
+        background-color: mediumaquamarine;
+        
+    }
+    body{
+       background-color:moccasin;
+    }
+    .ww{
+       
+      margin-bottom: 2px;
+        background-color: palegreen;
+        color: black;
+        font-family: cursive;
+        font-style: italic;
+
+    }
+ </style>
+</head>
+
+<body ng-app="myApp" ng-controller="mainController">
+    <div class="cointaner-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 column">
+                    Choose class to be updated:<select id="class" 
+                    style="text-align: center;font-size: 20px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select><br>
+                      <button class="button" id="btn" onclick="first()">Enter</button><br>
+                      Note:Enter marks and attendance in percentages.
+                      
+                       
+                      <table>
+                          <thead><br/>
+                              <!-- Search: <input type="text" ng-model="search" placeholder="Search"> -->
+                              <tr>
+                                      <th id="rollno">Roll No.<br></th>
+                                      <th id="attendance">Attendance        <br></th>
+                                       <th id="Marks">Marks<br></th>
+                              </tr>
+                          </thead>
+                          <tr id="1">
+                              <th id="r1">1</th>
+                              <th><input id="a1"type="text"  placeholder="Enter Attendance"></th>
+                              <th><input  id="m1"type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="2">
+                              <th id="r2">2</th>
+                              <th><input id="a2" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m2" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="3">
+                              <th id="r3">3</th>
+                              <th><input id="a3" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m3" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="4">
+                              <th id="r4">4</th>
+                              <th><input id="a4" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m4" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="5">
+                              <th id="r5">5</th>
+                              <th><input id="a5" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m5" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="6">
+                              <th id="r6">6</th>
+                              <th><input id="a6" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m6" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="7">
+                              <th id="r7">7</th>
+                              <th><input id="a7" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m7" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="8">
+                              <th id="r8">8</th>
+                              <th><input id="a8" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m8" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="9">
+                              <th id="r9">9</th>
+                              <th><input id="a9" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m9" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                          <tr id="10">
+                              <th id="r10">10</th>
+                              <th><input id="a10" type="text"  placeholder="Enter Attendance"></th>
+                              <th><input id="m10" type="text"  placeholder="Enter Marks"></th>
+                          </tr>
+                                
+                              
+                               
+                      </table>
+                      <input id="submit" type="button" value="submit" onclick="submit()">
+                    
+                </div>
+            </div>
+        </div>                  
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+  
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+      <script src="../js files/stuupdate.js"></script>
+
+</body>
+</html>

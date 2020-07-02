@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+
+body{
+    background-image: url("../images/dist.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+    font-family: cursive;
+    font-style: italic;
+    
+}
+.fo{
+    margin-left: 550px;
+    margin-top: 200px;
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    color: red;
+    
+}
+.fo input{
+    background-color: transparent;
+    border-style: groove;
+    border-color: ivory;
+    color: white
+}
+    </style>
+</head>
+<body>
+<div class="fo">
+   School id:<br><input type="text" id="scid">
+   
+   <button class="button" onclick="verify()">submit</button>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+    <script src="../js files/dist.js"></script>
+</body>
+</html>
